@@ -38,7 +38,7 @@ Thermostat.prototype.down = function() {
     this.powerSavingMode = true;
     this.maxTemp = 25;
   };
-  // Thermostat.prototype.methodName = function () {
-  //
-  // };
+  Thermostat.prototype.reset = function() {
+    this.temperature = 20;
+  };
 };
