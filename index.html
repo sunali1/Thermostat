@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel='stylesheet' type ='text/css' href='style.css'>
     <title>Thermostat</title>
   </head>
   <body>
     <section>
       <h1 id="temperature"></h1>
+      <h1>Current temperature: <span id="current-temperature"></span></h1>    
+  <select id="current-city">
+    <option value="london">London</option>
+    <option value="newyork">New York</option>
+    <option value="paris">Paris</option>
+    <option value="tokyo">Tokyo</option>
+  </select>
+</section>
       <p>
         <button id="temperature-up">+</button>
         <button id="temperature-down">-</button>
@@ -15,6 +24,8 @@
         <button id="powersaving-off">PSM off</button>
       </p>
     </section>
-    <script src="js/thermostat.js"></script>
+    <script src="src/Thermostat.js"></script>
+    <script src="jquery-3.2.1.js"></script>
+    <script src="src/interface.js"></script>
   </body>
 </html>
